@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>进制转换</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/newPrefix/1.png</normaloff>:/newPrefix/1.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/newPrefix/2.png);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>380</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/1.png);</string>
+    </property>
+    <property name="text">
+     <string>开始转换</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 255, 127);
+
+</string>
+    </property>
+    <property name="text">
+     <string>二进制转八进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>二进制转十进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>二进制转十六进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_4">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>八进制转二进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_5">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>90</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>八进制转十进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_6">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>170</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>八进制转十六进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_7">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>20</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>十进制转二进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_8">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>90</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>十进制转八进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_9">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>170</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>十进制转十六进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_10">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>20</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>十六进制转二进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_11">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>90</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>十六进制转八进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_12">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>170</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>color: rgb(0, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>十六进制转十进制</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true"/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>230</y>
+      <width>401</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>380</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_swap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>544</x>
+     <y>406</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>654</x>
+     <y>402</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>second_eight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>second_ten()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>second_sixteen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>eight_two()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>eight_ten()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>312</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>382</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>eigh_sixteen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>189</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ten_two()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>576</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ten_eight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ten_sixteen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>579</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sixteen_two()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>717</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>771</x>
+     <y>61</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sixteen_eight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>718</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>762</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sixteen_ten()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>736</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>start_swap()</slot>
+  <slot>second_eight()</slot>
+  <slot>second_ten()</slot>
+  <slot>second_sixteen()</slot>
+  <slot>eight_two()</slot>
+  <slot>eight_ten()</slot>
+  <slot>eigh_sixteen()</slot>
+  <slot>ten_two()</slot>
+  <slot>ten_eight()</slot>
+  <slot>ten_sixteen()</slot>
+  <slot>sixteen_two()</slot>
+  <slot>sixteen_eight()</slot>
+  <slot>sixteen_ten()</slot>
+ </slots>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
